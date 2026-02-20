@@ -1,0 +1,15 @@
+name: IITM GHA Test
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: 23f2001277@ds.study.iitm.ac.in
+        run: echo "Hello, world!"
